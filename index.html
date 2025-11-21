@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Vishal — Product Manager</title>
+<meta name="description" content="Vishal — Product Manager. Resume and contact." />
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+<style>
+  :root{
+    --max-w: 880px;
+    --accent: #000;
+    --muted: #444;
+    --radius: 12px;
+  }
+
+  /* Hexagon SVG pattern as data URI */
+  body{
+    margin:0;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color:var(--accent);
+    background-color:#fff;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    /* subtle repeat of outlined hexagons */
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='104' viewBox='0 0 120 104'%3E%3Cg fill='none' stroke='%23000' stroke-width='1'%3E%3Cpath d='M30 2l30 17v34L30 86 0 53V19z'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 120px 104px;
+  }
+
+  .wrap{
+    max-width: var(--max-w);
+    margin:48px auto;
+    background: rgba(255,255,255,0.9);
+    border-radius: 16px;
+    padding:28px;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.06);
+    backdrop-filter: blur(2px);
+  }
+
+  header{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    margin-bottom:18px;
+  }
+
+  .avatar{
+    min-width:84px;
+    min-height:84px;
+    border-radius:12px;
+    border:2px solid var(--accent);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:28px;
+  }
+
+  h1{
+    margin:0;
+    font-size:22px;
+    letter-spacing:0.2px;
+  }
+  .title{
+    color:var(--muted);
+    margin-top:6px;
+    font-size:14px;
+  }
+
+  .actions{
+    margin-left:auto;
+    display:flex;
+    gap:10px;
+    align-items:center;
+  }
+
+  .btn{
+    border:1px solid var(--accent);
+    padding:8px 12px;
+    border-radius:10px;
+    text-decoration:none;
+    color:var(--accent);
+    font-weight:600;
+    font-size:13px;
+  }
+
+  main{
+    display:grid;
+    grid-template-columns: 1fr 300px;
+    gap:28px;
+    margin-top:18px;
+  }
+
+  .section{
+    background: transparent;
+    padding:0;
+  }
+
+  .card{
+    border-radius:12px;
+    padding:16px;
+  }
+
+  .summary{
+    margin-bottom:14px;
+    color:var(--muted);
+    line-height:1.5;
+  }
+
+  .list{
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  .item{
+    margin-bottom:14px;
+  }
+  .item strong{display:block; font-size:15px;}
+  .meta{font-size:13px; color:var(--muted); margin-top:6px;}
+
+  aside{
+    position:relative;
+  }
+
+  .side-box{
+    border:1px solid rgba(0,0,0,0.06);
+    padding:16px;
+    border-radius:12px;
+    background: rgba(255,255,255,0.8);
+  }
+
+  .sect-title{
+    font-size:13px;
+    letter-spacing:0.6px;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:10px;
+  }
+
+  .skill{
+    display:inline-block;
+    border:1px solid rgba(0,0,0,0.08);
+    padding:7px 10px;
+    border-radius:999px;
+    margin:6px 6px 0 0;
+    font-size:13px;
+    color:var(--muted);
+  }
+
+  footer{
+    margin-top:22px;
+    display:flex;
+    gap:12px;
+    align-items:center;
+    justify-content:flex-end;
+  }
+
+  a.link{
+    color:var(--accent);
+    text-decoration:none;
+    font-weight:600;
+  }
+
+  /* responsive */
+  @media (max-width:900px){
+    main{ grid-template-columns: 1fr; }
+    .actions{ margin-top:12px; }
+    footer{ justify-content:center; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="avatar" aria-hidden="true">V</div>
+      <div>
+        <h1>Vishal — Product Manager</h1>
+        <div class="title">Product Manager, AI & Data · Resume & Profile</div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn" href="/resume.pdf" download>Download PDF</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="card">
+          <p class="summary">
+            Product Manager focused on building AI products for document processing and transcription workflows. Experienced with ASR, redaction, and automation projects — bridging engineering, data, and customer needs.
+          </p>
+
+          <h3 style="margin:0 0 10px 0;">Experience</h3>
+          <ul class="list">
+            <li class="item">
+              <strong>Product Manager — AI Team</strong>
+              <div class="meta">Led product for ASR, redaction and Auto-DTP features. Prioritized roadmap, defined success metrics, and supported sales/demo calls.</div>
+            </li>
+
+            <li class="item">
+              <strong>Project: GLTranscribe</strong>
+              <div class="meta">Built transcription pipelines, compared ASR outputs to references, and delivered production-ready APIs.</div>
+            </li>
+
+            <li class="item">
+              <strong>Project: Auto DTP</strong>
+              <div class="meta">Automated PowerPoint formatting and visual QA for translated presentations.</div>
+            </li>
+          </ul>
+
+          <h3 style="margin-top:8px;">Education</h3>
+          <div class="meta">B.Tech — (details to replace)</div>
+
+          <h3 style="margin-top:10px;">Open to</h3>
+          <ul class="list">
+            <li class="item"><div class="meta">Product roles — AI/ML, Data-driven platforms, Developer tools.</div></li>
+          </ul>
+        </div>
+      </section>
+
+      <aside>
+        <div class="side-box">
+          <div class="sect-title">Contact</div>
+          <div style="font-weight:600">Vishal</div>
+          <div class="meta">Email: <a class="link" href="mailto:you@example.com">you@example.com</a></div>
+          <div class="meta">Location: Barcelona / Remote</div>
+
+          <div style="height:12px"></div>
+          <div class="sect-title">Skills</div>
+          <div>
+            <span class="skill">Product Strategy</span>
+            <span class="skill">ASR</span>
+            <span class="skill">DTP Automation</span>
+            <span class="skill">API Design</span>
+            <span class="skill">Data Analysis</span>
+          </div>
+
+          <div style="height:12px"></div>
+          <div class="sect-title">Links</div>
+          <div class="meta"><a class="link" target="_blank" rel="noopener" href="https://linkedin.com/in/yourprofile">LinkedIn</a></div>
+          <div class="meta"><a class="link" target="_blank" rel="noopener" href="https://github.com/yourusername">GitHub</a></div>
+
+          <div style="height:12px"></div>
+          <div class="sect-title" id="contact">Availability</div>
+          <div class="meta">Open for conversations — best to email for scheduling.</div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <a class="btn" href="/resume.pdf" download>Download Resume (PDF)</a>
+      <a class="link" href="mailto:you@example.com">you@example.com</a>
+    </footer>
+  </div>
+</body>
+</html>
